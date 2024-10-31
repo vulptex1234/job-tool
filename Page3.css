@@ -1,0 +1,132 @@
+  h1 {
+    font-size: 28px;
+    margin-bottom: 10px; /* 見出しの下の余白を縮める */
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin: 0;
+    text-decoration: none;
+  }
+  
+  .time-inputs-container {
+    max-height: 20vh; /* 高さを制限し、スクロールを有効に */
+    overflow-y: auto;
+    margin-bottom: 10px; /* コンテナの下の余白を縮める */
+  }
+  
+  .time-inputs {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px; /* 各入力グループの下の余白を縮める */
+  }
+
+  .label-input {
+    font-size: 20px;
+    display: flex;
+    gap: 15%;
+    justify-content: center;
+    margin-bottom: 0px; /* 各入力グループの下の余白を縮める */
+  }
+  
+  .time-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    font-size: 20px;
+    margin-bottom: 5px; /* ラベルの下の余白を縮める */
+  }
+  
+  input[type="time"] {
+    font-size: 20px;
+    padding: 0px; /* パディングを小さくして入力フィールドをコンパクトに */
+    margin: 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #3a3a3c;
+    color: white;
+    width: 150px;
+  }
+  
+  .calculate-button, .back-button, .add-shift-button {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 12px 20px; /* ボタンのパディングを小さくしてサイズを縮める */
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 0px; /* ボタンの上の余白を縮める */
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+
+  .back-button{
+    background-color: #ffa200;
+    color: white;
+    border: none;
+    padding: 12px 20px; /* ボタンのパディングを小さくしてサイズを縮める */
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 0px; /* ボタンの上の余白を縮める */
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .calculate-button:hover, .add-shift-button:hover {
+    background-color: #3700b3;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 10px; /* ボタン間のスペースを設定 */
+    margin-bottom: 10px; /* ボタンコンテナの下の余白 */
+  }
+
+  .add-shift-button, .clear-button {
+    flex: 1; /* ボタンの幅を均等に設定 */
+  }
+
+  .clear-button {
+    background-color: #ff3b30;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 0px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .tilde {
+    font-size: 24px;
+    margin: 0 10px;
+    align-self: center;
+  }
+
+  .results {
+    margin-top: 10px;
+    max-height: 30vh; /* 高さを制限し、スクロールを有効に */
+    overflow-y: auto;
+    margin-bottom: 10px; /* 結果表示エリアの下の余白を縮める */
+    animation: fadeIn 3s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px); /* 軽い移動効果を追加 */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
